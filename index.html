@@ -1,56 +1,374 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/digitra-matic/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digitra Matic | Стратегия роста на базе инноваций</title>
+  <meta name="description"
+    content="Консалтинг нового поколения. Передовая цифровая инфраструктура и экспертная поддержка для вашего бизнеса.">
+<link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230b0f19'/%3E%3Cpath d='M8 20 L16 8 L24 20' fill='none' stroke='%2306b6d4' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <script type="module" crossorigin src="/digitra-matic/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/digitra-matic/assets/styles-guStct1H.css">
+    <link rel="stylesheet" crossorigin href="/digitra-matic/assets/styles-BymINw5Z.css">
   </head>
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
-        </li>
+    <header class="header" id="header">
+  <div class="container header__container">
+    <a href="./#hero" class="header__logo">
+      Digitra<span class="header__logo-accent">Matic</span>
+    </a>
+
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li class="header__item"><a href="./#hero" class="header__link">Главная</a></li>
+        <li class="header__item"><a href="./#platform" class="header__link">Платформа</a></li>
+        <li class="header__item"><a href="./#innovation" class="header__link">Инновации</a></li>
+        <li class="header__item"><a href="./#blog" class="header__link">Блог</a></li>
+        <li class="header__item"><a href="./#about" class="header__link">О нас</a></li>
       </ul>
     </nav>
+
+    <div class="header__actions">
+      <a href="./#contact" class="btn btn--primary header__btn">Связаться</a>
+      <button class="header__burger" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </div>
 </header>
 
 
-    <main>
+    <main class="main">
       <!-- Loads the specified .html file -->
-      
+      <section class="hero" id="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="container hero__container">
+        <div class="hero__content" data-aos="fade-up">
+            <div class="hero__badge">Платформа года 2025</div>
+            <h1 class="hero__title">Воплотите мечты <br>в <span class="text-gradient">реальность</span></h1>
+            <p class="hero__desc">
+                Передовая цифровая инфраструктура для масштабирования бизнеса.
+                Откройте новые возможности с AI-инструментами для реальных задач.
+            </p>
+            <div class="hero__btns">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#platform" class="btn btn--outline">Узнать больше</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section platform" id="platform">
+    <div class="container">
+        <div class="section__header">
+            <h2 class="section__title">Технология нового <span class="text-accent">поколения</span></h2>
+            <p class="section__subtitle">Мы создаем решения, которые меняют правила игры. Платформа уже доступна в
+                Европе.</p>
+        </div>
+        <div class="platform__grid">
+            <div class="card platform__card">
+                <div class="card__icon"><i class="fa-solid fa-layer-group"></i></div>
+                <h3>Интеграция</h3>
+                <p>Быстрый и лёгкий старт. Подключение занимает 2 минуты без сложных настроек.</p>
+            </div>
+            <div class="card platform__card">
+                <div class="card__icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <h3>Аналитика</h3>
+                <p>Оценить перспективы проекта с помощью глубоких данных и AI-прогнозирования.</p>
+            </div>
+            <div class="card platform__card">
+                <div class="card__icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Безопасность</h3>
+                <p>Экспертная поддержка на всех этапах и защита данных уровня Enterprise.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section benefits" id="benefits">
+    <div class="container">
+        <div class="benefits__wrapper">
+            <div class="benefits__text">
+                <h2 class="section__title">Почему выбирают <br>Digitra Matic</h2>
+                <ul class="benefits__list">
+                    <li><i class="fa-solid fa-check"></i> Стратегия роста на базе инноваций</li>
+                    <li><i class="fa-solid fa-check"></i> Методологии, доказавшие эффективность</li>
+                    <li><i class="fa-solid fa-check"></i> Практики, применимые уже сегодня</li>
+                    <li><i class="fa-solid fa-check"></i> Проверенный партнер в UK</li>
+                </ul>
+                <a href="#contact" class="btn btn--primary benefits__btn">Получить консультацию</a>
+            </div>
+            <div class="benefits__visual">
+                <div class="bento-box bento-1">
+                    <span>+240%</span>
+                    <small>Рост эффективности</small>
+                </div>
+                <div class="bento-box bento-2">
+                    <i class="fa-solid fa-robot"></i>
+                    <small>AI Automation</small>
+                </div>
+                <div class="bento-box bento-3">
+                    <i class="fa-solid fa-globe"></i>
+                    <small>Global Access</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section innovation" id="innovation">
+    <div class="container">
+        <div class="innovation__inner">
+            <div class="innovation__content">
+                <h2 class="section__title">Инновации на пальцах</h2>
+                <p>Технологии, которые работают на вас. Постройте карьеру, которая работает на вас, используя
+                    автоматизацию.</p>
+                <div class="stats">
+                    <div class="stat__item">
+                        <span class="stat__num" data-val="98">0</span>%
+                        <span class="stat__label">Удовлетворенность</span>
+                    </div>
+                    <div class="stat__item">
+                        <span class="stat__num" data-val="12">0</span>k+
+                        <span class="stat__label">Пользователей</span>
+                    </div>
+                </div>
+            </div>
+            <div class="innovation__image">
+                <div class="shape-orb"></div>
+                <div class="shape-card">AI Core</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section about" id="about">
+    <div class="container about__container">
+        <div class="about__content">
+            <div class="hero__badge">Established in London</div>
+            <h2 class="section__title">Мы создаем <br>цифровое <span class="text-gradient">будущее</span></h2>
+            <p class="about__text">
+                Digitra Matic — это команда аналитиков, инженеров и стратегов, базирующаяся в финансовом сердце Европы.
+                Мы не просто внедряем технологии, мы адаптируем их под реальные бизнес-процессы.
+            </p>
+            <div class="about__features">
+                <div class="af-item">
+                    <span class="af-number">01.</span>
+                    <div class="af-desc">
+                        <strong>Прозрачность</strong>
+                        <p>Полная отчетность и легальность всех процессов в юрисдикции UK.</p>
+                    </div>
+                </div>
+                <div class="af-item">
+                    <span class="af-number">02.</span>
+                    <div class="af-desc">
+                        <strong>Экспертиза</strong>
+                        <p>Команда с опытом работы в Fortune 500 компаниях.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#contact" class="btn btn--outline about__btn">Стать партнером</a>
+        </div>
+
+        <div class="about__visual">
+            <div class="about__img-wrapper">
+                <img src="/digitra-matic/assets/one-DnlUG81d.jpg" alt="Digitra Office London" class="about__img">
+
+                <div class="about__card">
+                    <div class="ac-icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div>
+                        <strong>HQ London</strong>
+                        <small>Wharf Road, N1 7RW</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section blog" id="blog">
+    <div class="container">
+        <h2 class="section__title center">Блог эксперта</h2>
+        <div class="blog__grid">
+            <article class="blog__card">
+                <div class="blog__img">
+                    <img src="/digitra-matic/assets/two--7Ra-zHF.jpg" alt="Blog 1" style="background:#1e293b;">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__tag">Карьера</span>
+                    <h4>Карьерный апгрейд: с чего начать?</h4>
+                    <p>Переосмыслите подход к развитию с новыми инструментами.</p>
+                    <a href="#contact" class="blog__link">Читать далее →</a>
+                </div>
+            </article>
+            <article class="blog__card">
+                <div class="blog__img">
+                    <img src="/digitra-matic/assets/three-CsAiRDHV.jpg" alt="Blog 2" style="background:#1e293b;">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__tag">Технологии</span>
+                    <h4>AI для обычных людей</h4>
+                    <p>Как использовать нейросети в повседневных задачах.</p>
+                    <a href="#contact" class="blog__link">Читать далее →</a>
+                </div>
+            </article>
+            <article class="blog__card">
+                <div class="blog__img">
+                    <img src="/digitra-matic/assets/four-eR5Ky59y.jpg" alt="Blog 3" style="background:#1e293b;">
+                </div>
+                <div class="blog__content">
+                    <span class="blog__tag">Финансы</span>
+                    <h4>Программа пассивного дохода</h4>
+                    <p>Разбор современных стратегий инвестирования в IT.</p>
+                    <a href="#contact" class="blog__link">Читать далее →</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="section contact" id="contact">
+    <div class="container contact__container">
+        <div class="contact__info">
+            <h2 class="section__title">Связаться с нами</h2>
+            <p class="contact__desc">Запросить доступ или получить бесплатную консультацию по всем вопросам. Предложение
+                активно только в странах ЕС.</p>
+            <div class="contact__details">
+                <div class="cd-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <small>Email</small>
+                        <strong>support@digitra-matic.org</strong>
+                    </div>
+                </div>
+                <div class="cd-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <small>Phone (UK)</small>
+                        <strong>+44 20 7946 0832</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+            <div class="form__group">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name" placeholder="Иван Петров" required>
+            </div>
+            <div class="form__group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="form__group">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone" placeholder="Только цифры" required>
+                <span class="form__error" id="phoneError"></span>
+            </div>
+
+            <div class="form__group captcha-group">
+                <label id="captchaLabel">Сколько будет 3 + 5?</label>
+                <input type="number" id="captchaInput" required>
+                <input type="hidden" id="captchaResult">
+            </div>
+
+            <div class="form__checkbox">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">Я согласен с <a href="./personal-data-policy.html">обработкой данных</a></label>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--full">Отправить заявку</button>
+            <div class="form__message" id="formMessage"></div>
+        </form>
+    </div>
+</section>
     </main>
 
     <footer class="footer">
   <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT team
-      </a>
-    </p>
+    <div class="footer__grid">
+      <div class="footer__col">
+        <a href="./#hero" class="footer__logo">
+          Digitra<span class="footer__logo-accent">Matic</span>
+        </a>
+        <p class="footer__desc">
+          Передовая цифровая инфраструктура для масштабирования вашего бизнеса. Мы — проверенный партнер в мире
+          инноваций.
+        </p>
+        <div class="footer__socials">
+          <a href="https://www.linkedin.com/" class="footer__social"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/" class="footer__social"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.instagram.com/" class="footer__social"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Меню</h3>
+        <ul class="footer__list">
+          <li><a href="./#hero" class="footer__link">Главная</a></li>
+          <li><a href="./#platform" class="footer__link">Технологии</a></li>
+          <li><a href="./#blog" class="footer__link">Блог эксперта</a></li>
+          <li><a href="./#contact" class="footer__link">Консультация</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Информация</h3>
+        <ul class="footer__list">
+          <li><a href="./privacy.html" class="footer__link">Политика конфиденциальности</a></li>
+          <li><a href="./cookies.html" class="footer__link">Политика cookie</a></li>
+          <li><a href="./terms.html" class="footer__link">Условия использования</a></li>
+          <li><a href="./return.html" class="footer__link">Политика возврата</a></li>
+          <li><a href="./disclaimer.html" class="footer__link">Отказ от ответственности</a></li>
+          <li><a href="./personal-data-policy.html" class="footer__link">Обработка данных</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3 class="footer__title">Контакты</h3>
+        <ul class="footer__contact-list">
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-phone"></i>
+            <span>+44 20 7946 0832</span>
+          </li>
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:support@digitra-matic.org">support@digitra-matic.org</a>
+          </li>
+          <li class="footer__contact-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>14 Wharf Rd, London N1 7RW, United Kingdom</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; 2025 Digitra Matic. Все права защищены. Платформа уже доступна в Европе.</p>
+    </div>
   </div>
 </footer>
 
-
+    <div class="cookie-popup" id="cookiePopup">
+      <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.html">Cookie политике</a>.
+      </p>
+      <button class="btn btn--primary btn--sm" id="cookieAccept">Принять</button>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.29/bundled/lenis.min.js"></script>
   </body>
 </html>

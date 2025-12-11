@@ -3,4 +3,4 @@
                 ${a}
             </ul>
         `;const i=document.createElement("div");i.style.marginTop="30px",i.appendChild(n),e.appendChild(i),E.parentNode.insertBefore(e,E.nextSibling),w.addEventListener("click",()=>{_.classList.toggle("menu-open"),e.classList.toggle("is-active"),w.querySelectorAll("span")}),e.querySelectorAll("a").forEach(l=>{l.addEventListener("click",()=>{_.classList.remove("menu-open"),e.classList.remove("is-active")})})}});
-//# sourceMappingURL=main-Bj02XzBQ.js.map
+//# sourceMappingURL=main-FgJJr5Qk.js.map

@@ -978,3 +978,105 @@ body.menu-open .header__burger span:nth-child(3) {
 .about__card small {
     color: var(--color-text-muted);
 }
+/* --- LEGAL PAGES STYLES --- */
+.legal-page {
+    padding-top: calc(var(--header-height) + 60px);
+    /* Отступ от хедера */
+    min-height: 80vh;
+}
+
+.legal-content {
+    max-width: 800px;
+    /* Ограничиваем ширину для удобства чтения */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.02);
+    /* Легкая подложка */
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.legal-content h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.legal-content h2 {
+    font-family: var(--font-head);
+    color: var(--color-white);
+    font-size: 1.5rem;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border-left: 3px solid var(--color-primary);
+    /* Декор слева */
+    padding-left: 15px;
+}
+
+.legal-content p {
+    color: var(--color-text-muted);
+    font-size: 1rem;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.legal-content .lead {
+    font-size: 1.15rem;
+    color: var(--color-text);
+    margin-bottom: 30px;
+}
+
+.legal-content ul {
+    list-style: none;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+.legal-content li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    color: var(--color-text-muted);
+}
+
+.legal-content li::before {
+    content: '\f00c';
+    /* FontAwesome check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--color-accent);
+    font-size: 0.8rem;
+}
+
+.legal-content strong {
+    color: var(--color-white);
+}
+
+.contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.contact-link a {
+    color: var(--color-primary);
+}
+
+.contact-link i {
+    color: var(--color-accent);
+}
+
+/* Адаптив для юридических страниц */
+@media (max-width: 768px) {
+    .legal-content {
+        padding: 20px;
+    }
+
+    .legal-content h1 {
+        font-size: 2rem;
+    }
+}
